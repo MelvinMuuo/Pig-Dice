@@ -17,14 +17,10 @@ function getRandomIntInclusive(min, max) {
 
 $(document).ready(function() {
   $("#button1").click(function() {
-    $("#button1").attr("disabled",true);
-    $("#button2").attr("disabled",false);
     alert(addition1());
 
   })
   $("#button2").click(function() {
-    $("#button1").attr("disabled",false);
-    $("#button2").attr("disabled",true);
     alert(addition2());
   })
 })
