@@ -16,9 +16,6 @@ function getRandomIntInclusive(min, max) {
 }
 
 $(document).ready(function() {
-  $("#proceeed1").click(function() {
-
-  }
   $("#button1").click(function() {
     alert(addition1());
 

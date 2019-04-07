@@ -1,0 +1,68 @@
+.wholebody {
+  background-color: #E5E7E9;
+  height: 17.5cm;
+  width: 34cm;
+}
+  .registration1 {
+  height: 10cm;
+  width: 10cm;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+.title {
+  color: white;
+  padding-top: 10px;
+  margin-left: 130px;
+  font-size: 28px;
+}
+.dice {
+  margin-top: 30px;
+  margin-left: 120px;
+}
+#formGroupExampleInput {
+  margin-top: 50px;
+}
+.background {
+  border-color: #E5E7E9;
+  background-image: -webkit-linear-gradient(118deg, #34ADFF 45%, white 45%);
+  min-height: 669px;
+}
+.playertwo {
+  margin-left: 1100px;
+  margin-top: 150px;
+}
+.playerone {
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+#proceed1 {
+  background-color: #34ADFF;
+  color: white;
+  padding: 8px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  width : 250px;
+  border-radius: 14px;
+}
+.row {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.topblock {
+  background-color: #34ADFF;
+  height: 50px;
+}
+#proceed2 {
+  background-color: #34ADFF;
+  color: white;
+  padding: 8px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  width : 250px;
+  border-radius: 14px;
+}
+#formGroupExampleInput2 {
+  margin-top: 50px;
+}
