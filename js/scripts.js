@@ -2,7 +2,6 @@ var total1 = 0;
 var total2 = 0;
 var turnNumber1 = 0;
 var turnNumber2 = 0;
-var turnTotal = 0;
 
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
@@ -41,5 +40,4 @@ $(document).ready(function() {
     $("#button1").attr("disabled",false);
     $("#button2").attr("disabled",true);
   })
-
 })
