@@ -2,7 +2,7 @@ var player1, player2;
 var result1 = 0;
 var turnresult = 0;
 
-fuction player(name, totalscore){
+function player(name, totalscore){
   this.name = name;
   this.totalscore = total;
 }
@@ -15,16 +15,28 @@ player.prototype.addition = function () {
   this.totalscore += turnresult;
   return this.totalscore;
 }
-function beginning (){
-  player1.totalscore = 0;
-  player2.totalscore = 0;
-}
+player.prototype.Endgame = function () {
+  if (this.totalscore >= 100){
 
-$(document).ready(function)(){
-  beginning();
-
-  $("#button1").click(function() {
-    $("#output").text(addition());
-
+    $("#output").append("<p id='game-over'>GAME OVER! " + this.name + " won!");
   }
 }
+
+$(document).ready(function(){
+  $("#button1").click(function() {
+    $("#output").text(this.totalscore);
+  })
+
+  $("#button2").click(function() {
+    $("#output").text(this.totalscore);
+  })
+  $("#hold1").click(function() {
+    $("#button1").attr("disabled",true);
+    $("#button2").attr("disabled",false);
+  })
+  $("#hold2").click(function() {
+    $("#button1").attr("disabled",false);
+    $("#button2").attr("disabled",true);
+})
+
+})
