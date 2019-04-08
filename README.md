@@ -20,7 +20,7 @@ This project was created using:
 ## Behavior-Driven Development 
 BDD is a common process in which the developer's focus begins on the behaviors that they want to see in their final application rather than thinking first about the code.
 
-The criteria that must be considered to determine the pg dice game are:
+The criteria that must be considered to determine the pig dice game are:
   1. Ability to roll the dice when it's the users turn to play the game.
   2. Ability to see the score the user gets for each roll of the dice they make in the game.
   3. Ability to see the cumulative score for each round the user plays in the game. For example, if they roll the scores 2-6-3 consecutively, they should see that their end score as 11.
