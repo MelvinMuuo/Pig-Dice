@@ -11,11 +11,20 @@ function output () {
   result1 = Math.floor(Math.random() * 6) + 1;
   return turnresult += result1;
 }
-function addition() {
+player.prototype.addition = function () {
   this.totalscore += turnresult;
   return this.totalscore;
 }
 function beginning (){
   player1.totalscore = 0;
   player2.totalscore = 0;
+}
+
+$(document).ready(function)(){
+  beginning();
+
+  $("#button1").click(function() {
+    $("#output").text(addition());
+
+  }
 }
