@@ -1,35 +1,21 @@
-var total1 = 0;
-var total2 = 0;
+var player1, player2;
+var result1 = 0;
+var turnresult = 0;
 
-function addition1() {
-  return total1 += getRandomIntInclusive(1,6);
-}
-function addition2() {
-  return total2 += getRandomIntInclusive(1,6);
-}
-
-
-function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
+fuction player(name, totalscore){
+  this.name = name;
+  this.totalscore = total;
 }
 
-$(document).ready(function() {
-  $("#button1").click(function() {
-    alert(addition1());
-
-  })
-  $("#button2").click(function() {
-    alert(addition2());
-  })
-  $("#hold1").click(function() {
-    $("#button1").attr("disabled",true);
-    $("#button2").attr("disabled",false);
-  })
-  $("#hold2").click(function() {
-    $("#button1").attr("disabled",false);
-    $("#button2").attr("disabled",true);
-  })
-
-})
+function output () {
+  result1 = Math.floor(Math.random() * 6) + 1;
+  return turnresult += result1;
+}
+function addition() {
+  this.totalscore += turnresult;
+  return this.totalscore;
+}
+function beginning (){
+  player1.totalscore = 0;
+  player2.totalscore = 0;
+}
