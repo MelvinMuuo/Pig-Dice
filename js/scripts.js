@@ -1,34 +1,28 @@
-var player1, player2;
-var result1 = 0;
-var turnresult = 0;
+var total1 = 0;
+var total2 = 0;
+var turnNumber1 = 0;
+var turnNumber2 = 0;
+var turnTotal = 0;
 
-function player(name, totalscore){
-  this.name = name;
-  this.totalscore = total;
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
+}
+function addition1() {
+  return turnNumber += getRandomIntInclusive(1,6);
+}
+function addition2() {
+  return turnTotal += getRandomIntInclusive(1,6);
 }
 
-function output () {
-  result1 = Math.floor(Math.random() * 6) + 1;
-  return turnresult += result1;
-}
-player.prototype.addition = function () {
-  this.totalscore += turnresult;
-  return this.totalscore;
-}
-player.prototype.Endgame = function () {
-  if (this.totalscore >= 100){
 
-    $("#output").append("<p id='game-over'>GAME OVER! " + this.name + " won!");
-  }
-}
-
-$(document).ready(function(){
+$(document).ready(function() {
   $("#button1").click(function() {
-    $("#output").text(this.totalscore);
+    $("#output").text(addition1());
   })
-
   $("#button2").click(function() {
-    $("#output").text(this.totalscore);
+    $("#output2").text(addition2());
   })
   $("#hold1").click(function() {
     $("#button1").attr("disabled",true);
@@ -37,6 +31,6 @@ $(document).ready(function(){
   $("#hold2").click(function() {
     $("#button1").attr("disabled",false);
     $("#button2").attr("disabled",true);
-})
+  })
 
 })
