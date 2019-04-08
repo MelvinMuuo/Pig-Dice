@@ -34,8 +34,8 @@
   margin-top: 150px;
 }
 .playerone {
-  margin-left: 100px;
-  margin-bottom: 20px;
+  margin-left: 150px;
+  margin-bottom: -30px;
 }
 #proceed1 {
   background-color: #34ADFF;
@@ -48,7 +48,7 @@
 }
 .row {
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .topblock {
   background-color: #34ADFF;
@@ -65,4 +65,80 @@
 }
 #formGroupExampleInput2 {
   margin-top: 50px;
+}
+
+#hold1 {
+  margin-left: 50px;
+  font-size: 20px;
+  font-family: serif;
+  background:#ffffff;
+  color: red;
+  padding: 15px 15px;
+  border: 2px solid #f00000;
+  border-radius: 8px;
+}
+#button1{
+  margin-bottom: 1cm;
+  margin-left: 50px;
+  font-size: 20px;
+  font-family: serif;
+  background:#ffffff;
+  color: green;
+  padding: 15px 15px;
+  border: 2px solid green;
+  border-radius: 8px;
+}
+.butpos{
+  margin-top: 50px;
+  margin-left: -80px;
+}
+.butpos2 {
+  margin-left: 900px;
+  margin-top: 30px;
+}
+.playertwo {
+  margin-top: -30px;
+  margin-left: 1000px;
+}
+#hold2 {
+  font-size: 20px;
+  font-family: serif;
+  background:#ffffff;
+  color: red;
+  padding: 15px 15px;
+  border: 2px solid #f00000;
+  border-radius: 8px;
+}
+#button2{
+  margin-bottom: 1cm;
+  margin-left: -20px;
+  font-size: 20px;
+  font-family: serif;
+  background:#ffffff;
+  color: green;
+  padding: 15px 15px;
+  border: 2px solid green;
+  border-radius: 8px;
+}
+#output{
+  margin-left: 40px;
+  font-size: 1.5cm;
+  margin-top: -120px;
+}
+#output1b{
+  margin-left: 40px;
+  font-size: 2cm;
+  margin-top: -100px;
+}
+#output2{
+  color: white;
+  margin-left: 950px;
+  font-size: 1.5cm;
+  margin-top: 120px;
+}
+#output2b{
+  color: white;
+  margin-left: 950px;
+  font-size: 2cm;
+  margin-top: 70px;
 }
